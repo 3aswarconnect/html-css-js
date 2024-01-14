@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+    <div class="matter">
+     <h2>TO DO LIST</h2>
+     <input id="i" type="text" placeholder="Add your text">
+     <button onclick="addtask()">ADD</button>
+    
+    <div class="data">
+        <ui id="main">
+            <li class="com">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>
+        </ui>
+    </div>
+</div>
+<script>
+    let inp = document.getElementById("i");
+let dat = document.getElementById("main");
+
+function addtask() {
+  if (inp.value === '') {
+    alert("add something, you bloody!");
+  } else {
+    let li = document.createElement("li");
+    li.innerHTML = inp.value;
+    dat.appendChild(li);
+    inp.value = ''; // Clear the input field after adding the task
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(92, 180, 161, 0.39);
+}
+.matter{
+  background-color: rgb(228, 241, 239);
+  position: absolute;
+  top:110px;
+  left: 500px;
+  height:200px;
+  width: 500px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-kerning: auto;
+}
+#i{
+    width: 200px;
+    height: 25px;
+}
+#y{
+    width: 30px;
+    height:25px;
+    top:300px;
+}
+button{
+    cursor: pointer;
+}
+.com{
+    text-decoration: line-through;
+}
